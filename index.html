@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>First header</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub</title>
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
-
-  </header>
-  <main class="main">
-  </main>
-  <footer class="footer"></footer>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div>
+            <h2>Установка Git</h2>
+            <p>GitHub предоставляет оконное приложение с графическим интерфейсом для выполнения основных операций с
+                репозиторием, и консольную версию Git с автоматическими обновлениями для расширенных сценариев
+                работы.</p>
+        </div>
+        <div>
+            <h2>Первоначальная настройка</h2>
+            <p>Настройка информации о пользователе для всех локальных репозиториев</p>
+            <p class="teg">$ git config --global user.name "[имя]"</p>
+            <p>Устанавливает имя, которое будет отображаться в поле автора у выполняемых вами коммитов</p>
+            <p class="teg">$ git config --global user.email "[адрес электронной почты]"</p>
+            <p>Устанавливает адрес электронной почты, который будет отображаться в информации о выполняемых вами коммитах</p>
+        </div>
+        <div>
+            <h2>Операции с файлами</h2>
+            <p>Перемещение и удаление версий файлов репозитория</p>
+            <p class="teg">$ git rm [файл]</p>
+            <p>Удаляет конкретный файл из рабочей директории и индексирует его удаление</p>
+            <p class="teg">$ git rm --cached [файл]</p>
+            <p>Убирает конкретный файл из контроля версий, но физически оставляет его на своём месте</p>
+            <p class="teg">$ git mv [оригинальный файл] [новое имя]</p>
+            <p>Перемещает и переименовывает указанный файл, сразу индексируя его для последующего коммита</p>
+        </div>
+        <div>
+            <h2>Игнорирование некоторых файлов</h2>
+            <div class="teg"> <p>*.log</p>
+                <p>build/</p>
+                <p>temp-*</p>
+            </div>
+            <p>Git будет игнорировать файлы и директории, перечисленные в файле .gitignore с помощью wildcard синтаксиса</p>
+            <p class="teg">$ git ls-files --others --ignored --exclude-standard</p>
+            <p>Список всех игнорируемых файлов в текущем проекте</p>
+        </div>
+        <div>
+            <h2></h2>
+            <p></p>
+        </div>
+    </main>
+    <footer class="footer"></footer>
 </div>
 </body>
 </html>

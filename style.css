@@ -26,3 +26,48 @@ img {
     height: auto;
     vertical-align: top;
 }
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    background: #333333;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+.nav-list a {
+    display: inline-block;
+    padding: 35px 40px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover{
+    color: red;
+    background: #01070a;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.teg {
+    background: #F4F4F4;
+}
