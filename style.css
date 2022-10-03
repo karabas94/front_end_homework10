@@ -60,6 +60,7 @@ ul {
     color: white;
     text-decoration: none;
     position: relative;
+    margin: 0 0 0 35px;
 }
 
 a:hover{
@@ -68,6 +69,23 @@ a:hover{
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
-.teg {
-    background: #F4F4F4;
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    height: auto;
+    margin: auto;
 }
+
+.column {
+    width: 50%;
+    margin: 10px;
+}
+
+.teg {
+    display: inline-block;
+    background: #e0d8d8;
+}
+
