@@ -1,5 +1,15 @@
 body {
     margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
 }
 
 html {
